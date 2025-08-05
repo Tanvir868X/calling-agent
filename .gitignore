@@ -1,0 +1,4 @@
+.env
+gspread_creds.json
+__pycache__/
+*.pyc
