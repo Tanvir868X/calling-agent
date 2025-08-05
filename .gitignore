@@ -1,4 +1,15 @@
-.env
-gspread_creds.json
+# Python cache
 __pycache__/
 *.pyc
+
+# Environment files
+.env
+gspread_creds.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual environment (optional, if you have one)
+venv/
+env/
