@@ -16,9 +16,9 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 load_dotenv()
 
 PORT = int(os.getenv("PORT", "8080"))
-DOMAIN = os.getenv("PUBLIC_DOMAIN")  # e.g., your Render domain like agent.onrender.com
+DOMAIN = os.getenv("NGROK_URL")
 if not DOMAIN:
-    raise ValueError("PUBLIC_DOMAIN environment variable not set.")
+    raise ValueError("NGROK_URL environment variable not set.")
 WS_URL = f"wss://{DOMAIN}/ws"
 
 WELCOME_GREETING = "Hi! I am a Customer agent created by Farhan Tanvir. How can I help you today?!"
